@@ -3,6 +3,7 @@
   &-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    overflow: hidden;
   }
   &-box {
     padding: 2rem 2rem;
