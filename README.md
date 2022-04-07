@@ -9,3 +9,4 @@
 - a) write npm start in terminal
 - b) use live server
 
+![restio](https://user-images.githubusercontent.com/79769638/162325952-7a9ec9fe-bd5c-4edc-90a9-8041e610d0d4.gif)
