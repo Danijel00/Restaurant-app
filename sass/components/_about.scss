@@ -1,0 +1,87 @@
+.about {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+
+    @media only screen and (min-width: $bp-large) {
+      background-image: linear-gradient(
+          -180deg,
+          var(--opacity-1),
+          var(--opacity-2)
+        ),
+        url("../../assets/img/about/about-large.jpg");
+    }
+
+    @media only screen and (min-width: $bp-medium), (min-width: $bp-small) {
+      background-image: linear-gradient(
+          -180deg,
+          var(--opacity-1),
+          var(--opacity-2)
+        ),
+        url("../../assets/img/about/about-medium.jpg");
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      background-image: linear-gradient(
+          -180deg,
+          var(--opacity-1),
+          var(--opacity-2)
+        ),
+        url("../../assets/img/about/about-small.jpg");
+    }
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &-heading {
+    position: relative;
+    &::before {
+      content: "Discover";
+      @include before;
+      color: var(--text-color);
+    }
+  }
+
+  &-name {
+    color: var(--text-color-2);
+  }
+
+  &-paragraph {
+    padding: 0 1.5rem;
+    line-height: 2;
+    color: var(--text-color-2);
+    text-align: center;
+  }
+
+  &-title {
+    display: inline-block;
+    font-size: var(--normal-font-size);
+    padding: 1rem 0;
+    color: var(--text-color);
+  }
+
+  &-img {
+    width: 6rem;
+    border-radius: 50%;
+    padding-bottom: 1rem;
+  }
+
+  &-content {
+    flex: 1;
+    padding-top: 6rem;
+  }
+}

@@ -1,0 +1,74 @@
+.order {
+  background-color: var(--container-color);
+  &-heading {
+    color: var(--text-color);
+    letter-spacing: 2px;
+    position: relative;
+    &::before {
+      content: "Fast delivery";
+      @include before;
+      color: var(--first-color-lighter);
+    }
+  }
+}
+
+// FORM
+.form {
+  background-color: var(--opacity-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  border: 1px solid var(--first-color);
+
+  &-inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-input {
+    width: 49%;
+    &__text {
+      display: block;
+      padding: 0.5rem 0;
+      font-size: var(--normal-font-size);
+      color: var(--text-color);
+    }
+    &__field,
+    &__textarea {
+      background-color: var(--body-color);
+      color: var(--first-color-lighter);
+      border-radius: 0.5rem;
+      border: 0.2rem solid var(--first-color);
+      padding: 1rem;
+      font-size: var(--normal-font-size);
+      font-family: inherit;
+      text-transform: none;
+      width: 100%;
+      resize: none;
+      &:focus {
+        outline: none;
+        border: 0.2rem solid var(--first-color-lighter);
+      }
+      &::placeholder {
+        color: var(--first-color);
+      }
+    }
+    &__textarea {
+      resize: none;
+      height: 10rem;
+    }
+  }
+}
+
+// RESPONSIVE MEDIA
+
+// 592px
+.form {
+  @media only screen and (max-width: $bp-small) {
+    &-input,
+    &-btn {
+      width: 100%;
+    }
+  }
+}

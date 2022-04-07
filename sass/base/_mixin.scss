@@ -1,0 +1,9 @@
+@mixin before {
+  position: absolute;
+  width: 100%;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--normal-font-size);
+  letter-spacing: 2px;
+}

@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+    <!-- ==== STYLES ==== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- ==== GOOGLE FONTS ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Italiana&family=Roboto+Serif:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ==== FONT AWESOME CDN ==== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- ====  BOX ICONS ==== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ==== AOS ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ==== SWIPER CDN ==== -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Restio - The Best place to eat</title>
+  </head>
+  <body>
+    <section class="home" id="home">
+      <header class="header" id="header">
+        <!-- ==== NAVBAR ==== -->
+        <nav class="nav container">
+          <a href="#" class="nav-logo">
+            <img src="assets/img/header/logo.png" alt="Logo" />
+          </a>
+          <!-- ==== NAV MENU ==== -->
+          <ul class="nav-menu">
+            <li>
+              <a class="nav-link nav-link__active" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#dishes">Dishes</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#offer">Offer</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#review">Review</a>
+            </li>
+          </ul>
+          <!-- ==== BURGER MENU ==== -->
+          <button type="button" class="nav-icon nav-burger">
+            <span class="nav-burger__line"></span>
+            <span class="nav-burger__line"></span>
+            <span class="nav-burger__line"></span>
+          </button>
+
+          <!-- ==== NAV ICONS ==== -->
+          <div class="nav-icons">
+            <!-- ==== NAV SEARCH ICON ==== -->
+            <button type="button" class="nav-icon" id="search-icon">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+            <!-- ==== NAV CART ICON ==== -->
+            <button
+              type="button"
+              class="nav-icon nav-icon__search"
+              id="cart-btn"
+            >
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="nav-icon__count" id="cart-count-info"></span>
+            </button>
+          </div>
+
+          <!-- ==== CART CONTAINER ==== -->
+          <div class="cart">
+            <div class="cart-container">
+              <div class="cart-list">
+                <!-- CART ITEM START -->
+                <!-- <div class="cart-item">
+                  <img
+                    src="assets/img/dish/fish-1.jpg"
+                    alt=""
+                    class="cart-item__img"
+                  />
+                  <div class="cart-info">
+                    <p class="cart-info__name">
+                      <span>Name:</span>Vegetable Rainbow Salad
+                    </p>
+                    <p class="cart-info__category">
+                      <span>Category:</span>Salad
+                    </p>
+                    <p class="cart-info__price"><span>Price:</span>$15</p>
+                  </div>
+                  <button type="button" class="nav-icon cart-delete__btn">
+                   <i class='bx bxs-trash cart-delete__icon'></i>
+                  </button>
+                </div> -->
+                <!-- CART ITEM END -->
+              </div>
+              <div class="cart-total">
+                <p>Total: $</p>
+                <span class="cart-total__price" id="cart-total-price"></span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ==== HOME VIDEO ==== -->
+      <video class="home-video" autoplay muted loop>
+        <source src="assets/video/home.mp4" type="video/mp4" />
+      </video>
+
+      <!-- ==== TEXT CONTENT ==== -->
+      <div class="home-content">
+        <h1 class="home-heading center-text">
+          <span class="home-name">Restio</span> food
+        </h1>
+        <h3 class="heading-3 home-quote center-text">
+          <q>Nothing brings people together like good food</q>
+        </h3>
+        <a class="btn btn--primary home-btn" href="#about">Discover</a>
+      </div>
+    </section>
+
+    <!-- ==== ABOUT US SECTION ==== -->
+    <section class="about section center-text" id="about">
+      <h1 class="heading-1 about-heading">Our story</h1>
+      <div class="about-container container swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="about-content swiper-slide">
+            <img
+              src="assets/img/about/about-1.jpg"
+              alt="chef"
+              class="about-img"
+            />
+            <p class="about-name">Marzio Klement</p>
+            <span class="about-title">Master Chef</span>
+            <p class="about-paragraph">
+              <q
+                >Cooking is not difficult. Everyone has taste, even if they
+                don't realize it. Even if you're not a great chef, there's
+                nothing to stop you understanding the difference between what
+                tastes good and what doesn't.</q
+              >
+            </p>
+          </div>
+          <div class="about-content swiper-slide">
+            <img
+              src="assets/img/about/about-2.jpg"
+              alt="chef"
+              class="about-img"
+            />
+            <p class="about-name">Jescha Klement</p>
+            <span class="about-title">General Manager</span>
+            <p class="about-paragraph">
+              <q
+                >Whatever you do, do with determination. You have one life to
+                live; do your work with passion and give your best. Whether you
+                want to be a chef, doctor, actor, or a mother, be passionate to
+                get the best result.</q
+              >
+            </p>
+          </div>
+          <div class="about-content swiper-slide">
+            <img
+              src="assets/img/about/about-3.jpg"
+              alt="chef"
+              class="about-img"
+            />
+            <p class="about-name">Johan Tertius</p>
+            <span class="about-title">Kitchen Manager</span>
+            <p class="about-paragraph">
+              <q
+                >I have spent more time in my life working and being in
+                restaurants than being at home. I immediately feel comfortable
+                entering a restaurant, and I feel even more comfortable in the
+                back with the chef and cooks.</q
+              >
+            </p>
+          </div>
+          <div class="about-content swiper-slide">
+            <img
+              src="assets/img/about/about-4.jpg"
+              alt="chef"
+              class="about-img"
+            />
+            <p class="about-name">Jescha Klement</p>
+            <span class="about-title">Sous Chef</span>
+            <p class="about-paragraph">
+              <q
+                >My Mum was the main reason why I became a chef. She influenced
+                all of my family to feel free in the kitchen - it was the centre
+                of our home and I have wonderful memories of helping Mum cook
+                and experiencing the love and patience that went into the
+                food.</q
+              >
+            </p>
+          </div>
+          <div class="about-content swiper-slide">
+            <img
+              src="assets/img/about/about-5.jpg"
+              alt="chef"
+              class="about-img"
+            />
+            <p class="about-name">Filip Devaraj</p>
+            <span class="about-title">Executive Chef</span>
+            <p class="about-paragraph">
+              <q
+                >You have to be confident in who you are and what you're doing.
+                Of course, you try to evolve. I would never tell you, 'Today is
+                the best I will ever be.' I'm always trying to be a better chef,
+                a better dad, a better person.</q
+              >
+            </p>
+          </div>
+          <div class="about-content swiper-slide">
+            <img
+              src="assets/img/about/about-6.jpg"
+              alt="chef"
+              class="about-img"
+            />
+            <p class="about-name">Verica Danai</p>
+            <span class="about-title">Pastry Chef</span>
+            <p class="about-paragraph">
+              <q
+                >I think I'm going to give my baby her first food on
+                Thanksgiving, make her some organic sweet potato. I'm very
+                excited! It's going to be a big day and my husband is in charge
+                of the turkey - he's the chef of the family!</q
+              >
+            </p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- ==== DISHES SECTION ==== -->
+    <section class="dishes section" id="dishes">
+      <h1 class="heading-1 dishes-heading mb-big center-text">
+        Popular dishes
+      </h1>
+      <div class="dishes-filters mb-small">
+        <div class="dishes-filters__item dishes-filters__active">Omnivores</div>
+        <div class="dishes-filters__item">Carnivore</div>
+        <div class="dishes-filters__item">Pescetarian</div>
+        <div class="dishes-filters__item">Vegetarian</div>
+      </div>
+      <div class="dishes-container container mb-small" data-aos="fade-up">
+        <!-- DISH REFERENCE FROM dishes.json -->
+        <!-- <div class="dish">
+          <a href="#" class="fas fa-heart dish-icon dish-icon-heart"></a>
+          <a href="#" class="fas fa-eye dish-icon dish-icon-eye"></a>
+          <img
+            src="assets/img/header/salad-1.jpg"
+            alt="dish-1"
+            class="dish-img"
+          />
+          <div class="dish-details center-text">
+            <span class="dish-category">Salad</span>
+            <span class="dish-name">Vegetable Rainbow Salad</span>
+            <div class="dish-rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+            <span class="dish-price">$15</span>
+          </div>
+          <button class="dish-btn">
+            <svg class="dish-btn__icon">
+              <use xlink:href="assets/img/sprite.svg#icon-cart"></use>
+            </svg>
+            Add To Cart
+          </button>
+        </div>-->
+      </div>
+      <ul class="pagination">
+        <li class="pagination-item pagination-previous pagination-disable">
+          <a href="#" class="pagination-link">Prev</a>
+        </li>
+        <li class="pagination-item pagination-current pagination-active">
+          <a href="#" class="pagination-link">1</a>
+        </li>
+        <li class="pagination-item pagination-dots">
+          <a href="#" class="pagination-link">...</a>
+        </li>
+        <li class="pagination-item pagination-current">
+          <a href="#" class="pagination-link">5</a>
+        </li>
+        <li class="pagination-item pagination-current">
+          <a href="#" class="pagination-link">6</a>
+        </li>
+        <li class="pagination-item pagination-dots">
+          <a href="#" class="pagination-link">...</a>
+        </li>
+        <li class="pagination-item pagination-current">
+          <a href="#" class="pagination-link">10</a>
+        </li>
+        <li class="pagination-item pagination-next">
+          <a href="#" class="pagination-link">Next</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==== OFFER SECTION ==== -->
+    <section class="offer section" id="offer">
+      <h1 class="heading-1 offer-heading mb-small center-text">
+        What we offer
+      </h1>
+      <div class="offer-container container">
+        <div class="offer-left">
+          <div class="offer-img" data-aos="fade-right">
+            <img src="assets/img/offer/offer.png" alt="offer" />
+          </div>
+        </div>
+        <div class="offer-right">
+          <div class="offer-content" data-aos="fade-left">
+            <div class="heading-1 offer-content__heading">
+              Best food in the country
+            </div>
+            <p class="offer-paragraph">
+              <q
+                >Eating is so intimate. It’s very sensual. When you invite
+                someone to sit at your table and you want to cook for them,
+                you’re inviting a person into your life.</q
+              >
+            </p>
+            <p class="offer-paragraph">
+              <q
+                >Good restaurant design is about achieving equilibrium between
+                the food, service, and design - in effect, telling a complete
+                story.</q
+              >
+            </p>
+
+            <div class="offer-icons__container">
+              <div class="offer-icons">
+                <i class="bx bxs-truck offer-icon"></i>
+                <span class="offer-delivery">Free delivery</span>
+              </div>
+              <div class="offer-icons">
+                <i class="bx bxs-dollar-circle offer-icon"></i>
+                <span class="offer-payment">Easy payment</span>
+              </div>
+              <div class="offer-icons">
+                <i class="bx bx-headphone offer-icon"></i>
+                <span class="offer-service">24/7 Service</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== REVIEW SECTION ==== -->
+    <section class="review section" id="review">
+      <h1 class="heading-1 review-heading mb-small center-text">
+        Customer reviews
+      </h1>
+      <div class="review-container container swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <!-- REVIEW 1 -->
+          <div class="review-box swiper-slide">
+            <i class="bx bxs-quote-left review-box__quote-left"></i>
+            <div class="review-top">
+              <img
+                class="review-top__img"
+                src="assets/img/review/profile-1.jpg"
+                alt="review-1"
+              />
+              <h3 class="heading-3 review-top__name">Hira Melánia</h3>
+              <div class="review-top__rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+            </div>
+            <div class="review-middle">
+              <p class="review-middle__paragraph">
+                Pleasant ambience, surrounded by greenery, pleasant music,
+                really classy. The waiters were kind, the food excellent, we
+                were quick served. Prices are decent. For all the praise! The
+                staff is courteous and friendly and the food was prepared fast
+                and lovely.
+              </p>
+            </div>
+            <i class="bx bxs-quote-right review-box__quote-right"></i>
+          </div>
+          <!-- REVIEW 2 -->
+          <div class="review-box swiper-slide">
+            <i class="bx bxs-quote-left review-box__quote-left"></i>
+            <div class="review-top">
+              <img
+                class="review-top__img"
+                src="assets/img/review/profile-2.jpg"
+                alt="review-2"
+              />
+              <h3 class="heading-3 review-top__name">Sheldon Phillip</h3>
+              <div class="review-top__rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+            </div>
+            <div class="review-middle">
+              <p class="review-middle__paragraph">
+                Ambience, relaxation, cleanliness and service, a clean five.
+                Food, a really strong three, arranging and visual effect of food
+                a clean five, all this makes a total of four. The restaurant is
+                definitely recommended because in my opinion it has a standard
+                and it should be respected.
+              </p>
+            </div>
+            <i class="bx bxs-quote-right review-box__quote-right"></i>
+          </div>
+          <!-- REVIEW 3 -->
+          <div class="review-box swiper-slide">
+            <i class="bx bxs-quote-left review-box__quote-left"></i>
+            <div class="review-top">
+              <img
+                class="review-top__img"
+                src="assets/img/review/profile-3.jpg"
+                alt="review-3"
+              />
+              <h3 class="heading-3 review-top__name">Gabrielle Linwood</h3>
+              <div class="review-top__rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+            </div>
+            <div class="review-middle">
+              <p class="review-middle__paragraph">
+                The relationship for money is very good. The staff is very
+                pleasant and the hygiene is at a high level. By far the best
+                restaurant in town! Value for money very good. All
+                recommendations! 🖐👏
+              </p>
+            </div>
+            <i class="bx bxs-quote-right review-box__quote-right"></i>
+          </div>
+          <!-- REVIEW 4 -->
+          <div class="review-box swiper-slide">
+            <i class="bx bxs-quote-left review-box__quote-left"></i>
+            <div class="review-top">
+              <img
+                class="review-top__img"
+                src="assets/img/review/profile-4.jpg"
+                alt="review-4"
+              />
+              <h3 class="heading-3 review-top__name">Danijel Kocić</h3>
+              <div class="review-top__rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="review-middle">
+              <p class="review-middle__paragraph">
+                A really beautiful place in the center of the city with a great
+                view to the park and quiet pedestrian zone. The menu card is
+                availible in different languages with a huge offer of drinks and
+                delicious food. You can choose between local and international
+                food (italian, german, etc).
+              </p>
+            </div>
+            <i class="bx bxs-quote-right review-box__quote-right"></i>
+          </div>
+          <!-- REVIEW 5 -->
+          <div class="review-box swiper-slide">
+            <i class="bx bxs-quote-left review-box__quote-left"></i>
+            <div class="review-top">
+              <img
+                class="review-top__img"
+                src="assets/img/review/profile-5.jpg"
+                alt="review-5"
+              />
+              <h3 class="heading-3 review-top__name">Nick Višeslav</h3>
+              <div class="review-top__rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="review-middle">
+              <p class="review-middle__paragraph">
+                Great service, pleasant environment and really good
+                Mediterranean cuisine. Probably one of the best restaurants in
+                the country.
+              </p>
+            </div>
+            <i class="bx bxs-quote-right review-box__quote-right"></i>
+          </div>
+          <!-- REVIEW 6 -->
+          <div class="review-box swiper-slide">
+            <i class="bx bxs-quote-left review-box__quote-left"></i>
+            <div class="review-top">
+              <img
+                class="review-top__img"
+                src="assets/img/review/profile-6.jpg"
+                alt="review-6"
+              />
+              <h3 class="heading-3 review-top__name">Steph Darin</h3>
+              <div class="review-top__rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+            </div>
+            <div class="review-middle">
+              <p class="review-middle__paragraph">
+                Nice restaurant. The food is mostly good. The bad thing is that
+                the same dish is never of the same quality and taste. If you
+                come for a good Safe Salad, be sure it will never be the same ..
+                It is in a way quite original ... you get a unique dish every
+                time :)
+              </p>
+            </div>
+            <i class="bx bxs-quote-right review-box__quote-right"></i>
+          </div>
+          <!-- REVIEW 7 -->
+          <div class="review-box swiper-slide">
+            <i class="bx bxs-quote-left review-box__quote-left"></i>
+            <div class="review-top">
+              <img
+                class="review-top__img"
+                src="assets/img/review/profile-7.jpg"
+                alt="review-7"
+              />
+              <h3 class="heading-3 review-top__name">Serena Anton</h3>
+              <div class="review-top__rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="review-middle">
+              <p class="review-middle__paragraph">
+                An exceptional place for family outings, as well as outings with
+                friends. Ambience, cleanliness, service, tastes, arrangements,
+                .... everything is at a very enviable level. Try it and see for
+                yourself 😃❤
+              </p>
+            </div>
+            <i class="bx bxs-quote-right review-box__quote-right"></i>
+          </div>
+          <!-- REVIEW 8 -->
+          <div class="review-box swiper-slide">
+            <i class="bx bxs-quote-left review-box__quote-left"></i>
+            <div class="review-top">
+              <img
+                class="review-top__img"
+                src="assets/img/review/profile-8.jpg"
+                alt="review-8"
+              />
+              <h3 class="heading-3 review-top__name">Darrel Marlowe</h3>
+              <div class="review-top__rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+            <div class="review-middle">
+              <p class="review-middle__paragraph">
+                Harmonious interior, with a beautiful garden .. Close to the
+                city center .. And yet you enjoy the view of the park and
+                greenery, with a quiet murmur of water, which brings freshness
+                ... Delicious cakes..Choose your sweets and enjoy ... The
+                inevitable lemonade .. Great coffee ...
+              </p>
+            </div>
+            <i class="bx bxs-quote-right review-box__quote-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== ORDER SECTION ==== -->
+    <div class="order section" id="order">
+      <h1 class="heading-1 order-heading mb-small center-text">Order now</h1>
+      <div class="order-container container">
+        <form action="#" class="form">
+          <!-- INPUT 1 -->
+          <div class="form-inputBox">
+            <div class="form-input">
+              <span class="form-input__text">Your name</span>
+              <input
+                required
+                type="text"
+                class="form-input__field"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-input">
+              <span class="form-input__text">Your number</span>
+              <input
+                required
+                type="number"
+                class="form-input__field"
+                placeholder="Enter your number"
+                min="0"
+              />
+            </div>
+          </div>
+          <!-- INPUT 2 -->
+          <div class="form-inputBox">
+            <div class="form-input">
+              <span class="form-input__text">Your order</span>
+              <input
+                required
+                type="text"
+                class="form-input__field"
+                placeholder="Enter food name"
+              />
+            </div>
+            <div class="form-input">
+              <span class="form-input__text">Additional food</span>
+              <input
+                required
+                type="text"
+                class="form-input__field"
+                placeholder="Extra with food"
+              />
+            </div>
+          </div>
+          <!-- INPUT 3 -->
+          <div class="form-inputBox">
+            <div class="form-input">
+              <span class="form-input__text">Order quantity</span>
+              <input
+                required
+                type="text"
+                class="form-input__field"
+                placeholder="Order quantity"
+              />
+            </div>
+            <div class="form-input">
+              <span class="form-input__text">Date and time</span>
+              <input required type="datetime-local" class="form-input__field" />
+            </div>
+          </div>
+          <!-- INPUT 4 -->
+          <div class="form-inputBox">
+            <div class="form-input">
+              <span class="form-input__text">Your address</span>
+              <textarea
+                required
+                placeholder="Enter your address"
+                class="form-input__textarea"
+              ></textarea>
+            </div>
+            <div class="form-input">
+              <span class="form-input__text">Your message</span>
+              <textarea
+                required
+                placeholder="Enter your message"
+                class="form-input__textarea mb-tiny"
+              ></textarea>
+            </div>
+          </div>
+          <button class="btn btn--secondary form-btn">Order now</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ==== FOOTER ==== -->
+    <footer class="footer" id="footer">
+      <div class="footer-container container">
+        <!-- locations -->
+        <div class="footer-box">
+          <h3 class="heading-3 footer-box__heading">Locations</h3>
+          <a href="#" class="footer-box__link">Serbia</a>
+          <a href="#" class="footer-box__link">Slovenia</a>
+          <a href="#" class="footer-box__link">Croatia</a>
+          <a href="#" class="footer-box__link">Greece</a>
+          <a href="#" class="footer-box__link">Montenegro</a>
+        </div>
+        <!-- quick links -->
+        <div class="footer-box">
+          <h3 class="heading-3 footer-box__heading">Quick links</h3>
+          <a href="#home" class="footer-box__link">Home</a>
+          <a href="#about" class="footer-box__link">About</a>
+          <a href="#dishes" class="footer-box__link">Dishes</a>
+          <a href="#offer" class="footer-box__link">Offer</a>
+          <a href="#review" class="footer-box__link">Review</a>
+          <a href="#order" class="footer-box__link">Order</a>
+        </div>
+        <!-- contact info -->
+        <div class="footer-box">
+          <h3 class="heading-3 footer-box__heading">Contact info</h3>
+          <a href="#" class="footer-box__link">949-292-1252</a>
+          <a href="#" class="footer-box__link">949-592-3519</a>
+          <a href="#" class="footer-box__link">email@email.com</a>
+          <a href="#" class="footer-box__link">email2@email.com</a>
+          <a href="#" class="footer-box__link"
+            >8855 Ohio St. Vista, CA 92083
+          </a>
+        </div>
+        <!-- follow us -->
+        <div class="footer-box">
+          <h3 class="heading-3 footer-box__heading">Follow us</h3>
+          <div class="footer-box__social">
+            <a href="#" class="footer-box__link-social">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#" class="footer-box__link-social">
+              <i class="bx bxl-facebook-circle"></i>
+            </a>
+            <a href="#" class="footer-box__link-social">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" class="footer-box__link-social">
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright center-text">
+        Restio © <span id="year"></span> All rights reserved.
+      </div>
+    </footer>
+
+    <!-- ==== PROGRESS BAR ==== -->
+    <div class="progress" id="progress">
+      <span class="progress-value" id="progress-value">
+        <i class="bx bx-up-arrow progress-icon"></i>
+      </span>
+    </div>
+
+    <!-- ==== PRELOADER ==== -->
+    <div class="preloader">
+      <img src="assets/img/loader.gif" alt="gif" class="preloader-gif" />
+    </div>
+
+    <!-- ==== BODY OVERLAY ==== -->
+    <div class="body-overlay body-overlay__hidden"></div>
+
+    <form action="#" class="search-form" id="search-form">
+      <input
+        required
+        type="text"
+        id="search"
+        class="search-form__input"
+        placeholder="Search for food.."
+      />
+      <!-- SEARCH ICON -->
+      <button type="button" class="nav-icon search-form__icon">
+        <svg class="search-form__svg">
+          <use xlink:href="assets/img/sprite.svg#icon-search"></use>
+        </svg>
+      </button>
+      <!-- CLOSE ICON -->
+      <button type="button" class="nav-icon search-form__close" id="close-form">
+        <svg>
+          <use xlink:href="assets/img/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </form>
+
+    <!-- ==== JAVASCRIPT ==== -->
+    <!-- SCROLL REVEAL LIBRARY -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- MAIN JS -->
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

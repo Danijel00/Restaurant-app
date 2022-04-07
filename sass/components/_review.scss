@@ -1,0 +1,94 @@
+.review {
+  &-heading {
+    color: var(--text-color-2);
+    position: relative;
+    &::before {
+      content: "What people say?";
+      @include before;
+      color: var(--first-color-lighter);
+    }
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 3rem 2rem;
+    height: min-content !important;
+    border: 0.5rem solid var(--first-color-lighter);
+    background-color: var(--container-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+    position: relative;
+
+    &__quote-left {
+      position: absolute;
+      top: 0.3rem;
+      left: 0.5rem;
+      font-size: var(--h1-font-size);
+      color: var(--first-color);
+    }
+    &__quote-right {
+      position: absolute;
+      bottom: 0.3rem;
+      right: 0.5rem;
+      font-size: var(--h1-font-size);
+      color: var(--first-color);
+    }
+  }
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    &__img {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &__name {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      font-size: var(--normal-font-size);
+      color: var(--first-color-light);
+    }
+
+    &__rating {
+      display: flex;
+      color: var(--first-color-lighter);
+    }
+  }
+
+  &-middle {
+    &__paragraph {
+      text-align: left;
+      line-height: 1.7;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+// RESPONSIVE DESIGN
+
+// 992px
+.review {
+  @media only screen and (max-width: $bp-smaller) {
+    &-box {
+      row-gap: 1.5rem;
+      padding: 2rem 1.5rem;
+    }
+    &-top {
+      flex-direction: column;
+
+      &__name {
+        display: block;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+}

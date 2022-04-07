@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Vegetable Rainbow Salad",
+    "category": "Salad",
+    "price": "7.50",
+    "imgSrc": "../../assets/img/dish/salad-1.jpg"
+  },
+  {
+    "name": "Dandelion and White Bean Salad with Mint and Olives",
+    "category": "Salad",
+    "price": "8.50",
+    "imgSrc": "../../assets/img/dish/salad-2.jpg"
+  },
+  {
+    "name": "Lettuces with Parmigiano, Radish and Dill Pickle Vinaigrette",
+    "category": "Salad",
+    "price": "4.50",
+    "imgSrc": "../../assets/img/dish/salad-3.jpg"
+  },
+  {
+    "name": "Oma’s Green Mountain Salad",
+    "category": "Salad",
+    "price": "7.30",
+    "imgSrc": "../../assets/img/dish/salad-4.jpg"
+  },
+  {
+    "name": "Chicken Salad with Cucumber, Red Pepper, and Honey-Mustard",
+    "category": "Salad",
+    "price": "11.00",
+    "imgSrc": "../../assets/img/dish/salad-5.jpg"
+  },
+  {
+    "name": "Little Gems with Warm Garlic Dressing",
+    "category": "Salad",
+    "price": "5.00",
+    "imgSrc": "../../assets/img/dish/salad-6.jpg"
+  },
+  {
+    "name": "Quinoa Salad with Roasted Peppers and Tomatoes",
+    "category": "Salad",
+    "price": "10.50",
+    "imgSrc": "../../assets/img/dish/salad-7.jpg"
+  },
+  {
+    "name": "Chicory Salad with Pickled Quince and Pomegranate",
+    "category": "Salad",
+    "price": "6.50",
+    "imgSrc": "../../assets/img/dish/salad-8.jpg"
+  },
+  {
+    "name": "Salmon with Creamy Dill Sauce",
+    "category": "Fish",
+    "price": "18.50",
+    "imgSrc": "../../assets/img/dish/fish-1.jpg"
+  },
+  {
+    "name": "Blackened Catfish with Mango Avocado Salsa",
+    "category": "Fish",
+    "price": "17.50",
+    "imgSrc": "../../assets/img/dish/fish-2.jpg"
+  },
+  {
+    "name": "Easy Fish Tacos",
+    "category": "Fish",
+    "price": "16.50",
+    "imgSrc": "../../assets/img/dish/fish-3.jpg"
+  },
+  {
+    "name": "Garlic Tilapia with Spicy Kale",
+    "category": "Fish",
+    "price": "16.50",
+    "imgSrc": "../../assets/img/dish/fish-4.jpg"
+  },
+  {
+    "name": "Blackened Tilapia with Zucchini Noodles",
+    "category": "Fish",
+    "price": "15.00",
+    "imgSrc": "../../assets/img/dish/fish-5.jpg"
+  },
+  {
+    "name": "Citrus Salmon Fillets with Salsa",
+    "category": "Fish",
+    "price": "16.00",
+    "imgSrc": "../../assets/img/dish/fish-6.jpg"
+  },
+  {
+    "name": "Peppered Tuna Kabobs",
+    "category": "Fish",
+    "price": "18.30",
+    "imgSrc": "../../assets/img/dish/fish-7.jpg"
+  },
+  {
+    "name": "Savory Tomato-Braised Tilapia",
+    "category": "Fish",
+    "price": "17.30",
+    "imgSrc": "../../assets/img/dish/fish-8.jpg"
+  },
+  {
+    "name": "Beef Tenderloin in Mushroom Sauce",
+    "category": "Meat",
+    "price": "20.30",
+    "imgSrc": "../../assets/img/dish/meat-1.jpg"
+  },
+  {
+    "name": "Ground Beef Taco Salad",
+    "category": "Meat",
+    "price": "23.50",
+    "imgSrc": "../../assets/img/dish/meat-2.jpg"
+  },
+  {
+    "name": "Family-Favorite Cheeseburger Pasta",
+    "category": "Meat",
+    "price": "24.50",
+    "imgSrc": "../../assets/img/dish/meat-3.jpg"
+  },
+  {
+    "name": "Asian Noodle & Beef Salad",
+    "category": "Meat",
+    "price": "24.00",
+    "imgSrc": "../../assets/img/dish/meat-4.jpg"
+  }
+]
