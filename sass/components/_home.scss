@@ -1,6 +1,5 @@
 .home {
   min-height: 100vh;
-  overflow: hidden;
   position: relative;
 
   &-heading {
@@ -54,15 +53,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   width: 100%;
-  z-index: var(--z-modal);
+  z-index: var(--z-fixed);
   background-color: var(--opacity-1);
-  transition: all 0.5s ease;
-  overflow: hidden;
+  transition: all 0.4s ease;
 
   &.active-header {
-    position: fixed;
+    padding: 0.3rem 0;
     background-color: var(--first-color);
     box-shadow: var(--header-shadow);
   }
